@@ -1,14 +1,9 @@
-(function() {
-    const currentPath = window.location.pathname;
-    const isMobile = window.innerWidth < 1024 || /Mobi|Android/i.test(navigator.userAgent);
-  
-    if (isMobile && currentPath !== '/error.html') {
-      window.location.replace('/error.html');
-    } else if (!isMobile && currentPath !== '/index.html') {
-      window.location.href('https://sid-golf-anmolwalia07s-projects.vercel.app/');
-    }
-  })();
-  
+if (window.innerWidth < 1024 || /Mobi|Android/i.test(navigator.userAgent)) {
+    alert("This website is not optimized for mobile devices. Please use a desktop or laptop for the best experience.");
+    window.location.href = "https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/cafe-about-1.jpg?strip=all&lossy=1&sharp=1&ssl=1";
+}
+
+
 var crsr = document.querySelector("#cursor");
 var b = document.querySelector("#cursor-blur");
 
