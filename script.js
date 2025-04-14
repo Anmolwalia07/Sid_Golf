@@ -1,3 +1,14 @@
+(function() {
+    const currentPath = window.location.pathname;
+    const isMobile = window.innerWidth < 1024 || /Mobi|Android/i.test(navigator.userAgent);
+  
+    if (isMobile && currentPath !== '/error.html') {
+      window.location.replace('/error.html');
+    } else if (!isMobile && currentPath !== '/index.html') {
+      window.location.replace('/index.html');
+    }
+  })();
+  
 var crsr = document.querySelector("#cursor");
 var b = document.querySelector("#cursor-blur");
 
