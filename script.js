@@ -5,7 +5,7 @@
     if (isMobile && currentPath !== '/error.html') {
       window.location.replace('/error.html');
     } else if (!isMobile && currentPath !== '/index.html') {
-      window.location.replace('/index.html');
+      window.location.href('https://sid-golf-anmolwalia07s-projects.vercel.app/');
     }
   })();
   
